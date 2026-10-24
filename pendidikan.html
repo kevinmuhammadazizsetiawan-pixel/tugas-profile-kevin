@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+/* About Section */
+.about-section {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f4f8f7;
+}
+
+/* Box utama */
+.about-box {
+    width: 100%;
+    max-width: 650px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul */
+.about-box h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #4b8984;
+}
+
+.about-desc {
+    text-align: center;
+    color: #777;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+/* Daftar pendidikan */
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    background-color: #f4f8f7;
+    border-left: 5px solid #72B0AB;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.education-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.education-icon {
+    font-size: 30px;
+}
+
+.education-info h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+.education-info p {
+    font-size: 13px;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Tampilan HP */
+@media (max-width: 480px) {
+    .about-box {
+        padding: 22px;
+    }
+
+    .education-item {
+        padding: 12px;
+    }
+
+    .education-info h3 {
+        font-size: 14px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class="title">ABOUT</h2>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Tentang Saya</a>
+                </li>
+                <li class="nav-item">
+                    <a href="skills.html" class="nav-link">Skill</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pendidikan.html" class="nav-link">Pendidikan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">kontak</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="about-section">
+    <div class="about-box">
+        <h2>Riwayat Pendidikan Saya</h2>
+        <p class="about-desc">tentang saya</p>
+
+        <div class="education-list">
+            <div class="education-item">
+                <div class="education-icon">🎓</div>
+                <div class="education-info">
+                    <h3>Universitas Langlangbuana</h3>
+                    <p>Teknik Informatika - 2025 - Sekarang</p>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-icon">🏫</div>
+                <div class="education-info">
+                    <h3>SMKN 11 BANDUNG</h3>
+                    <p>RPL - 2021 - 2024</p>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</main>
+</body>
+</html>
